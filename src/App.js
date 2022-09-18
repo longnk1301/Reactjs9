@@ -17,6 +17,17 @@
 // Git la quy trinh de quan ly code, va cac version cua code
 // Tai sao can dung? Giup cho viec quan ly code, cung nhu lam viec nhom tot hon
 
+//Config git 
+//git config user.name "name"
+//git config user.email "email"
+
+//git remote add origin url_repo ---> add schema git repo
+//git remote -v ----> list tat ca cac remote
+//git add . ---> add tat ca file change vao stage changes
+//git commit -m "message" --> Dung de tao commit voi 1 message
+//git push origin master
+
+
 
 
 
