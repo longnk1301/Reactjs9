@@ -21,12 +21,19 @@
 //git config user.name "name"
 //git config user.email "email"
 
+//How to push code to repo
 //git remote add origin url_repo ---> add schema git repo
 //git remote -v ----> list tat ca cac remote
 //git add . ---> add tat ca file change vao stage changes
 //git commit -m "message" --> Dung de tao commit voi 1 message
-//git push origin master
+//git push origin master --->  push code tu local toi repo
+//git remote set-url origin git@Longnk1301:longnk1301/Reactjs9.git --> doi url cho remote
 
+//Git flow
+//Kh ---> xoa "Edit src/App.js and save to reload." khoi dashboard
+//Step1: Di chuyen vao branch master -> pull code moi nhat ve may ---> [master] ---> git pull origin master
+//Step2: Tao ra 1 branch rieng, tuong tu voi task ---> git checkout -b "remove-text"
+//Step3: Coding
 
 
 
@@ -41,9 +48,6 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
         <a
           className="App-link"
           href="https://reactjs.org"
