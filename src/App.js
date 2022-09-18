@@ -34,6 +34,10 @@
 //Step1: Di chuyen vao branch master -> pull code moi nhat ve may ---> [master] ---> git pull origin master
 //Step2: Tao ra 1 branch rieng, tuong tu voi task ---> git checkout -b "remove-text"
 //Step3: Coding
+//Step4: review code, test
+//Step5: tao commit --> push code
+//Step6: tao Pull request tren github
+//step7: Merged ---> Step1
 
 
 
