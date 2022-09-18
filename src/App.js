@@ -39,7 +39,9 @@
 //Step6: tao Pull request tren github
 //step7: Merged ---> Step1
 
-
+//Co the dung git pull hoac git rebase de keo code moi nhat ve
+//git pull origin master
+//git rebase origin/master
 
 
 
