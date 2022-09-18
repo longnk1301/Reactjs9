@@ -44,6 +44,14 @@
 //git rebase origin/master
 
 
+//BT
+//Clone project ve
+//Tao 1 branch theo format sau  "feature/ten"
+//them ten cua ban than
+//tao pr vao master
+//Merge vao master
+
+
 
 
 import logo from './logo.svg';
@@ -54,6 +62,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <p>Long</p>
         <a
           className="App-link"
           href="https://reactjs.org"
