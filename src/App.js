@@ -11,13 +11,12 @@
 
 //reactjs la 1 library
 
-
 //3. Git
 // Git la gi? Tai sao can dung?
 // Git la quy trinh de quan ly code, va cac version cua code
 // Tai sao can dung? Giup cho viec quan ly code, cung nhu lam viec nhom tot hon
 
-//Config git 
+//Config git
 //git config user.name "name"
 //git config user.email "email"
 
@@ -43,11 +42,8 @@
 //git pull origin master
 //git rebase origin/master
 
-
-
-
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
