@@ -61,6 +61,7 @@ function App() {
                 <p>Joe</p>
                 <p>Dat Anh was here :D thug </p>
                 <p>Hoang Anh</p>
+                <p>Hung Dung</p>
                 <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
                     Learn React
                 </a>
