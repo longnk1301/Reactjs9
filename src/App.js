@@ -59,7 +59,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>Long</p>
         <p>Joe</p>
-        <p>Nguyen Hoang Anh</p>
+        <p>Nguyen Huy Anh</p>
         <a
           className="App-link"
           href="https://reactjs.org"
