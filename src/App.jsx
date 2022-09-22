@@ -24,6 +24,7 @@
 import { useState } from 'react';
 import './App.css';
 import { Header } from './components/Header';
+import { Content } from './components/Content';
 import Slider from './components/Slider';
 
 function App() {
@@ -45,7 +46,7 @@ function App() {
             {/* Menu */}
             {/* BreadCrumb */}
             <Slider sliders={sliders} />
-            {/* Content */}
+            <Content />
             {/* Footer */}
         </div>
     );
