@@ -21,38 +21,38 @@
 //Them Content component gom info trang chu, du lieu tu App chuyen qua (Joe)
 //Them Footer component gom info cua 1 footer, du lieu tu App chuyen qua (Dat)
 
-import Slider from './components/Slider';
-import { useState } from 'react';
-import './App.css';
-import { Header } from './components/Header';
-import { Content } from './components/Content';
-import Breadcrumb from './components/Breadcrumb';
+import Slider from "./components/Slider";
+import { useState } from "react";
+import "./App.css";
+import { Header } from "./components/Header";
+import { Content } from "./components/Content";
+import Breadcrumb from "./components/Breadcrumb";
 
 function App() {
-    const [user] = useState({
-        name: 'Long',
-        isAuth: true,
-    });
+  const [user] = useState({
+    name: "Long",
+    isAuth: true,
+  });
 
-    const [sliders] = useState({
-        slider1: 'Slider1',
-        slider2: 'Slider2',
-        slider3: 'Slider3',
-        slider4: 'Slider4',
-    });
+  const [sliders] = useState({
+    slider1: "Slider1",
+    slider2: "Slider2",
+    slider3: "Slider3",
+    slider4: "Slider4",
+  });
 
-    const [breadCrumb] = useState(['Home', 'Product', 'Item...']);
+  const [breadCrumb] = useState(["Home", "Product", "Item..."]);
 
-    return (
-        <div className="App">
-            <Header userData={user} customData="data" isAuth />
-            {/* Menu */}
-            <Breadcrumb breadCrumb={breadCrumb} />
-            <Slider sliders={sliders} />
-            <Content />
-            {/* Footer */}
-        </div>
-    );
+  return (
+    <div className="App">
+      <Header userData={user} customData="data" isAuth />
+      {/* Menu */}
+      <Breadcrumb breadCrumb={breadCrumb} />
+      <Slider sliders={sliders} />
+      <Content />
+      {/* Footer */}
+    </div>
+  );
 }
 
 export default App;
