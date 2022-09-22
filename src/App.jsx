@@ -21,26 +21,34 @@
 //Them Content component gom info trang chu, du lieu tu App chuyen qua (Joe)
 //Them Footer component gom info cua 1 footer, du lieu tu App chuyen qua (Dat)
 
-import { useState } from "react";
-import "./App.css";
-import { Header } from "./components/Header";
+import { useState } from 'react';
+import './App.css';
+import { Header } from './components/Header';
+import Slider from './components/Slider';
 
 function App() {
-  const [user] = useState({
-    name: "Long",
-    isAuth: true,
-  });
+    const [user] = useState({
+        name: 'Long',
+        isAuth: true,
+    });
 
-  return (
-    <div className="App">
-      <Header userData={user} customData="data" isAuth />
-      {/* Menu */}
-      {/* BreadCrumb */}
-      {/* Slide */}
-      {/* Content */}
-      {/* Footer */}
-    </div>
-  );
+    const [sliders] = useState({
+        slider1: 'Slider1',
+        slider2: 'Slider2',
+        slider3: 'Slider3',
+        slider4: 'Slider4',
+    });
+
+    return (
+        <div className="App">
+            <Header userData={user} customData="data" isAuth />
+            {/* Menu */}
+            {/* BreadCrumb */}
+            <Slider sliders={sliders} />
+            {/* Content */}
+            {/* Footer */}
+        </div>
+    );
 }
 
 export default App;
