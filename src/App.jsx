@@ -41,7 +41,7 @@ function App() {
         slider4: 'Slider4',
     });
 
-    const [breadCrumb, setBreadCrumb] = useState(['Home', 'Product', 'Item...']);
+    const [breadCrumb] = useState(['Home', 'Product', 'Item...']);
 
     return (
         <div className="App">
