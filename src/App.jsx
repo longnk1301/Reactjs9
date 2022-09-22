@@ -1,25 +1,12 @@
-// co 2 kieu viet
-// function component
-// class component
+// hoan thanh https://flexboxfroggy.com/#vi toi bai 24 va chup lai kem ten (Huy Anh, Đạt)
 
-// < reactjs 16.8
-//class component la 1 statefull -> co the tao state trong component
-//function component laf 1 stateless -> khong the tao state trong component, chi co the nhan props tu component khac pass qua
+// https://www.autograph.io/
 
-//>= reactjs 16.8
-//function component laf 1 stateless + hooks -> statefull -> co the tao state trong component
-
-//State: la du lieu, co the thay doi va cap nhat du lieu
-//Props: dung de truyen du lieu giua cac component voi nhau
-
-//useState la 1 hook de quan ly state trong 1 component
-
-//BT:
-//Thêm component Menu gom 5 menus(do nguoi lam tu nghi) la 1 state tu app pass qua (Huy Anh)
-//Them slide component gom 4 sliders, du lieu tu App chuyen qua (Hoang Anh)
-//Them BreadCrumb component gom 3 tabs, du lieu tu App chuyen qua (Dung)
-//Them Content component gom info trang chu, du lieu tu App chuyen qua (Joe)
-//Them Footer component gom info cua 1 footer, du lieu tu App chuyen qua (Dat)
+// Đạt ->  UI Header
+// Joe -> UI Slider tại mục Featured Editions, có thể slide được thì càng tốt
+// Hoang Anh -> BreadCrumb
+// Huy Anh -> Footer
+// Dũng ->  Content -> UI mục Feature tai https://blog.autograph.io/
 
 import Slider from "./components/Slider";
 import { useState } from "react";
