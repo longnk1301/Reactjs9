@@ -25,6 +25,7 @@ import { useState } from "react";
 import "./App.css";
 import { Header } from "./components/Header";
 import { Content } from "./components/Content";
+import Breadcrumb from "./components/Breadcrumb";
 
 function App() {
   const [user] = useState({
@@ -32,13 +33,15 @@ function App() {
     isAuth: true,
   });
 
+  const [breadCrumb, setBreadCrumb] = useState(["Home", "Product", "Item..."]);
+
   return (
     <div className="App">
 
       <Header userData={user} customData="data" isAuth />
       <Content />
       {/* Menu */}
-      {/* BreadCrumb */}
+      <Breadcrumb breadCrumb={breadCrumb} />
       {/* Slide */}
       {/* Footer */}
     </div>
