@@ -21,6 +21,7 @@
 //Them Content component gom info trang chu, du lieu tu App chuyen qua (Joe)
 //Them Footer component gom info cua 1 footer, du lieu tu App chuyen qua (Dat)
 
+import Slider from "./components/Slider";
 import { useState } from "react";
 import "./App.css";
 import { Header } from "./components/Header";
@@ -33,16 +34,22 @@ function App() {
     isAuth: true,
   });
 
-  const [breadCrumb, setBreadCrumb] = useState(["Home", "Product", "Item..."]);
+  const [sliders] = useState({
+    slider1: "Slider1",
+    slider2: "Slider2",
+    slider3: "Slider3",
+    slider4: "Slider4",
+  });
+
+  const [breadCrumb] = useState(["Home", "Product", "Item..."]);
 
   return (
     <div className="App">
-
       <Header userData={user} customData="data" isAuth />
-      <Content />
       {/* Menu */}
       <Breadcrumb breadCrumb={breadCrumb} />
-      {/* Slide */}
+      <Slider sliders={sliders} />
+      <Content />
       {/* Footer */}
     </div>
   );
