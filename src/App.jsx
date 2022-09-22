@@ -33,19 +33,18 @@ function App() {
     name: "Long",
     isAuth: true,
   });
-
   const [sliders] = useState({
     slider1: "Slider1",
     slider2: "Slider2",
     slider3: "Slider3",
     slider4: "Slider4",
   });
-
   const [breadCrumb] = useState(["Home", "Product", "Item..."]);
+  const isDisplayHeader = true;
 
   return (
     <div className="App">
-      <Header userData={user} customData="data" isAuth />
+      {isDisplayHeader && <Header userData={user} customData="data" isAuth />}
       {/* Menu */}
       <Breadcrumb breadCrumb={breadCrumb} />
       <Slider sliders={sliders} />
