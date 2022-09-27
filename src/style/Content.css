@@ -1,0 +1,56 @@
+.content{
+}
+
+.articles {
+    width: 650px;
+    text-align: left;
+    margin: auto;
+}
+
+.article {
+    width: 650px;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: left;
+
+}
+
+.article span{
+    font-weight: 600;
+    color: #666;
+}
+
+.title-article {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+}
+
+.article .intro-article {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.4rem;
+    font-weight: 400;
+    color: #666;
+}
+
+.article a{
+    color: #121212;
+    font-weight: 900;
+    font-size: 0.875em;
+}
+
+.img1 {
+    width: 630px;
+    height: 275px;
+    margin-bottom: 10px;
+}
+
+.see-all {
+    font-weight: 900;
+    color: #121212;
+    font-size: 1rem;
+    text-decoration: none;
+    margin: 20px 10px;
+}
