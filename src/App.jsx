@@ -5,12 +5,7 @@ import { Content } from "./components/Content";
 import BreadCrumb from "./components/BreadCrumb/BreadCrumb";
 
 function App() {
-  const [sliders] = useState({
-    slider1: "Slider1",
-    slider2: "Slider2",
-    slider3: "Slider3",
-    slider4: "Slider4",
-  });
+  const [sliders] = useState(["Slider1", "Slider2", "Slider3", "Slider4"]);
 
   return (
     <div className="App">
