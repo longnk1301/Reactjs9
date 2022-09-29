@@ -1,11 +1,13 @@
 import { useState } from "react";
+import useFetchTodos from "../helper/helper";
 
 const Slider = ({ sliders }) => {
   const [userData, setUserData] = useState({
     username: "",
     password: "",
   });
-
+  const [data] = useFetchTodos();
+  console.log("data--", data);
   const handleClick = (type, value) => {
     if (type === undefined) {
       // handle logic default
