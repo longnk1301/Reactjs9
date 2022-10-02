@@ -13,14 +13,14 @@ const posts = [
     desc: "This blog provides information on the drop schedule for the Firefly Festival 2022 Collection.",
   },
   {
-    id: 1,
+    id: 2,
     thumbnail: img2,
     time: "August 15, 2022",
     title: "Firefly Festival 2022 Collection 2",
     desc: "This blog provides information on the drop schedule for the Firefly Festival 2022 Collection.",
   },
   {
-    id: 1,
+    id: 3,
     thumbnail: img3,
     time: "August 15, 2022",
     title: "Firefly Festival 2022 Collection 3",
@@ -38,7 +38,7 @@ export const Content = () => {
             <span>{post.time}</span>
             <div className="title-article">{post.title}</div>
             <div className="intro-article">{post.desc}</div>
-            <a href="#">Read more</a>
+            <a href={`/posts/${post.id}`}>Read more</a>
           </div>
         ))}
       </>
@@ -50,7 +50,7 @@ export const Content = () => {
       <h1>Featured</h1>
       <div className="articles">
         {renderPosts()}
-        <a href="#" className="see-all">
+        <a href="/posts" className="see-all">
           See All
         </a>
       </div>
