@@ -3,6 +3,7 @@ import { LandingPage } from "../screens/LandingPage";
 import { Posts } from "../screens/Posts";
 import { PostDetails } from "../screens/PostDetails";
 import { ErrorPage } from "../screens/ErrorPage";
+import { Community } from "../screens/Community";
 
 const Layout = () => {
   return (
@@ -16,6 +17,9 @@ const Layout = () => {
           </li>
           <li>
             <Link to="/posts">Posts</Link>
+          </li>
+          <li>
+            <Link to="/community">Community</Link>
           </li>
         </ul>
       </nav>
@@ -34,6 +38,9 @@ const CustomRouter = () => {
       </Route>
       <Route path="/posts" element={<Layout />}>
         <Route index element={<Posts />} />
+      </Route>
+      <Route path="/community" element={<Layout />}>
+        <Route index element={<Community />} />
       </Route>
       <Route path="/posts/:postId" element={<PostDetails />} />
       <Route path="*" element={<ErrorPage />} />
