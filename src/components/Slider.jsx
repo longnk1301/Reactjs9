@@ -6,8 +6,9 @@ const Slider = ({ sliders }) => {
     username: "",
     password: "",
   });
+  // eslint-disable-next-line no-unused-vars
   const [data] = useFetchTodos();
-  console.log("data--", data);
+
   const handleClick = (type, value) => {
     if (type === undefined) {
       // handle logic default

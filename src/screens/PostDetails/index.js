@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { AppContext } from "../../context";
 
 export const PostDetails = () => {
   const [postDetails, setPostDetails] = useState();
@@ -18,8 +19,13 @@ export const PostDetails = () => {
   }, [postId]);
 
   return (
-    <div>
-      post details {postId} - {postDetails?.content}
-    </div>
+    <AppContext.Consumer>
+      {(context) => (
+        <div>
+          post details {postId} - {postDetails?.content}
+          user information: {JSON.stringify(context)}
+        </div>
+      )}
+    </AppContext.Consumer>
   );
 };
