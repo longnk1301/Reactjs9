@@ -1,22 +1,27 @@
 import { useContext } from "react";
 import { AppContext } from "../../context";
+import CommunityProvider from "../../context/communityContext";
+import AutoGraph from "./AutoGraph";
 
 export const Community = () => {
-  const context = useContext(AppContext);
+  const { defaultState, addItem } = useContext(AppContext);
 
   const handleAddItem = () => {
-    context.addItem({
-      id: context.defaultState?.length + 1,
-      title: `Relate post ${context.defaultState?.length + 1}`,
+    addItem({
+      id: defaultState?.length + 1,
+      title: `Relate post ${defaultState?.length + 1}`,
       desc: "description",
     });
   };
 
   return (
-    <div>
-      Community:
-      <p>Posts related length: {context.defaultState?.length}</p>
-      <button onClick={handleAddItem}>Add Item</button>
-    </div>
+    <CommunityProvider>
+      <div>
+        Community:
+        <p>Posts related length: {defaultState?.length}</p>
+        <button onClick={handleAddItem}>Add Item</button>
+        <AutoGraph />
+      </div>
+    </CommunityProvider>
   );
 };
