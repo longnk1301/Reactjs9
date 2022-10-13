@@ -4,7 +4,7 @@ import { LandingPage } from "../screens/LandingPage";
 import { Posts } from "../screens/Posts";
 import { PostDetails } from "../screens/PostDetails";
 import { ErrorPage } from "../screens/ErrorPage";
-import { Community } from "../screens/Community";
+import Testing  from "../screens/Testing/Testing";
 
 const Layout = () => {
     return (
