@@ -1,0 +1,9 @@
+.body{
+    background-color: #12181B;
+    width: 100%;
+    position: relative;
+    top: 70px;
+    left: 0;
+    padding: 1rem 5%;
+    color: #fff;
+}

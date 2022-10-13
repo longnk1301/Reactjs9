@@ -1,0 +1,26 @@
+
+{
+    "songs": [
+        {
+            "id": "00001",
+            "name": "Phi Điểu Và Ve Sầu",
+            "performer": "Nhậm Thiên",
+            "image": "../../data/img/phidieuvavesau.jpg",
+            "audio": "../../../data/music/Phi-Dieu-Va-Ve-Sau-Nham-Nhien.mp3"
+        },
+        {
+            "id": "00002",
+            "name": "Thời Không Sai Lệch",
+            "performer": "Ngải Thần",
+            "image": "../../data/img/thoikhongsailech.jpg",
+            "audio": "../../../data/music/Thoi-Khong-Sai-Lech-Ngai-Than.mp3"
+        },
+        {
+            "id": "00003",
+            "name": "Aloha",
+            "performer": "Jung Suk",
+            "image": "../../data/img/aloha.jpg",
+            "audio": "../../../data/music/Aloha-Jo-Jung-Suk.mp3"
+        }
+    ]
+}

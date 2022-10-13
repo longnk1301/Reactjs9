@@ -1,0 +1,26 @@
+.card-item {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card-item .song-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: .5rem;
+}
+
+.card-item .song-img img {
+    width: 100%;
+}
+
+.card-item .song-name {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.card-item .performer {
+    color: rgb(156, 162, 172);
+}
