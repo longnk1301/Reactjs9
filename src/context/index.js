@@ -1,32 +1,30 @@
-import React, { useState } from "react";
+import { createContext, useEffect, useState } from "react";
+import { getDataCart } from "../services";
 
-export const AppContext = React.createContext();
+export const DataContext = createContext();
 
-const AppProvider = ({ children }) => {
-  const [defaultState, setState] = useState([
-    { id: 1, title: "Relate post 1", desc: "description" },
-    { id: 2, title: "Relate post 2", desc: "description" },
-    { id: 3, title: "Relate post 3", desc: "description" },
-    { id: 4, title: "Relate post 4", desc: "description" },
-  ]);
+const DataProvider = ({ children }) => {
+    const [cart, setCart] = useState({});
 
-  const addItem = (item) => {
-    setState([...defaultState, item]);
-  };
+    const [loading, setLoading] = useState(false);
 
-  const updateItem = (newState) => {};
+    useEffect(() => {
+        const handleDataCart = async () => {
+            const response = await getDataCart();
 
-  const deleteItem = (id) => {};
+            if (response) {
+                setCart(response);
 
-  const getPosts = () => {};
+                setLoading(true);
+            } else {
+                setCart({});
+            }
+        };
 
-  return (
-    <AppContext.Provider
-      value={{ defaultState, addItem, updateItem, deleteItem, getPosts }}
-    >
-      {children}
-    </AppContext.Provider>
-  );
+        handleDataCart();
+    }, []);
+
+    return <DataContext.Provider value={{ cart, setCart, loading }}>{children}</DataContext.Provider>;
 };
 
-export default AppProvider;
+export default DataProvider;

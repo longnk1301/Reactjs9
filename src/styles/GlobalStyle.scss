@@ -1,0 +1,11 @@
+@media only screen and (max-width: 600px) {
+    .navbar {
+        .navbar-brand-top {
+            display: none;
+        }
+    }
+
+    html {
+        font-size: 12px;
+    }
+}
