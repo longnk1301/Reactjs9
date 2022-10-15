@@ -1,17 +1,17 @@
 import React from "react";
-import CardItem from "../../../CardItem/CardItem";
+import CardItem from "../../../component/carditem/CardItem";
 import "./Recommended.css";
-import data from "../../../../data/data.json";
+import data from "../../../data/data.json";
 import { useDispatch } from 'react-redux';
-import { setSong } from '../../../../actions/setSong';
+import { setSong } from '../../../actions/setSong';
 
-import imgSong1 from "../../../../data/img/phidieuvavesau.jpg";
-import imgSong2 from "../../../../data/img/thoikhongsailech.jpg";
-import imgSong3 from "../../../../data/img/aloha.jpg";
+import imgSong1 from "../../../asset/img/phidieuvavesau.jpg";
+import imgSong2 from "../../../asset/img/thoikhongsailech.jpg";
+import imgSong3 from "../../../asset/img/aloha.jpg";
 
-import audioSong1 from "../../../../data/music/Phi-Dieu-Va-Ve-Sau-Nham-Nhien.mp3";
-import audioSong2 from "../../../../data/music/Thoi-Khong-Sai-Lech-Ngai-Than.mp3";
-import audioSong3 from "../../../../data/music/Aloha-Jo-Jung-Suk.mp3";
+import audioSong1 from "../../../asset/music/Phi-Dieu-Va-Ve-Sau-Nham-Nhien.mp3";
+import audioSong2 from "../../../asset/music/Thoi-Khong-Sai-Lech-Ngai-Than.mp3";
+import audioSong3 from "../../../asset/music/Aloha-Jo-Jung-Suk.mp3";
 
 const Recommended = () => {
 

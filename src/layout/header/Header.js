@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.css";
-import Search from "../../search/Search";
-import logo from "../../../asset/img/logo.jpg";
+import Search from "../../component/search/Search";
+import logo from "../../asset/img/logo.jpg";
 
 const Header = () => {
     return (

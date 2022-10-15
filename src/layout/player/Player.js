@@ -20,7 +20,7 @@ const Player = () => {
 
             </div>
             <audio controls>
-                <source src={require("../../../data/music/Phi-Dieu-Va-Ve-Sau-Nham-Nhien.mp3")} type="audio/mp3" />
+                <source src={require("../../asset/music/Phi-Dieu-Va-Ve-Sau-Nham-Nhien.mp3")} type="audio/mp3" />
             </audio>
             <div className=""></div>
         </div>

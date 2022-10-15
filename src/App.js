@@ -1,5 +1,5 @@
 import './App.css';
-import CustomRouter from './component/router/CustomRouter';
+import CustomRouter from '../src/router/CustomRouter';
 
 function App() {
   return (
