@@ -1,26 +1,117 @@
-
 {
-    "songs": [
+    "recommendedSongs": [
         {
             "id": "00001",
             "name": "Phi Điểu Và Ve Sầu",
+            "type": "song",
             "performer": "Nhậm Thiên",
-            "image": "../../data/img/phidieuvavesau.jpg",
-            "audio": "../../../data/music/Phi-Dieu-Va-Ve-Sau-Nham-Nhien.mp3"
+            "image": "phidieuvavesau.jpg",
+            "audio": "Phi-Dieu-Va-Ve-Sau-Nham-Nhien.mp3"
         },
         {
             "id": "00002",
             "name": "Thời Không Sai Lệch",
+            "type": "song",
             "performer": "Ngải Thần",
-            "image": "../../data/img/thoikhongsailech.jpg",
-            "audio": "../../../data/music/Thoi-Khong-Sai-Lech-Ngai-Than.mp3"
+            "image": "thoikhongsailech.jpg",
+            "audio": "Thoi-Khong-Sai-Lech-Ngai-Than.mp3"
         },
         {
             "id": "00003",
             "name": "Aloha",
+            "type": "song",
             "performer": "Jung Suk",
-            "image": "../../data/img/aloha.jpg",
-            "audio": "../../../data/music/Aloha-Jo-Jung-Suk.mp3"
+            "image": "aloha.jpg",
+            "audio": "Aloha-Jo-Jung-Suk.mp3"
+        }
+    ],
+    "allSongs": [
+        {
+            "id": "00001",
+            "name": "Phi Điểu Và Ve Sầu",
+            "type": "song",
+            "performer": "Nhậm Thiên",
+            "image": "phidieuvavesau.jpg",
+            "audio": "Phi-Dieu-Va-Ve-Sau-Nham-Nhien.mp3"
+        },
+        {
+            "id": "00002",
+            "name": "Thời Không Sai Lệch",
+            "type": "song",
+            "performer": "Ngải Thần",
+            "image": "thoikhongsailech.jpg",
+            "audio": "Thoi-Khong-Sai-Lech-Ngai-Than.mp3"
+        },
+        {
+            "id": "00003",
+            "name": "Aloha",
+            "type": "song",
+            "performer": "Jung Suk",
+            "image": "aloha.jpg",
+            "audio": "Aloha-Jo-Jung-Suk.mp3"
+        }
+    ],
+    "artists": [
+        {
+            "id": "00001",
+            "name": "Hoàng Thùy Linh",
+            "type": "artist",
+            "image": "hoangthuylinh.jpg",
+            "followers": "889"
+        },
+        {
+            "id": "00002",
+            "name": "Hòa Minzy",
+            "type": "artist",
+            "image": "hoaminzy.jpg",
+            "followers": "1221"
+        },
+        {
+            "id": "00003",
+            "name": "SOOBIN",
+            "type": "artist",
+            "image": "soobin.jpg",
+            "followers": "725"
+        }
+    ],
+    "Categories": [
+        {
+            "id": "00001",
+            "name": "Nhạc Việt",
+            "type": "category",
+            "image": "nhacviet.jpeg"
+        },
+        {
+            "id": "00002",
+            "name": "K-Pop",
+            "type": "category",
+            "image": "kpop.jpeg"
+        },
+        {
+            "id": "00003",
+            "name": "Pop",
+            "type": "category",
+            "image": "pop.jpg"
+        }
+    ],
+    "playLists": [
+        {
+            "id": "00001",
+            "name": "Alone Again",
+            "type": "pop",
+            "image": "nhacviet.jpeg"
+        },
+        {
+            "id": "00002",
+            "name": "Broken Heart",
+            "type": "kpop",
+            "image": "kpop.jpeg"
+        },
+        {
+            "id": "00003",
+            "name": "Love Ballads",
+            "type": "nhacviet",
+            "image": "pop.jpg"
         }
     ]
 }

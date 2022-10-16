@@ -5,26 +5,10 @@ import data from "../../../data/data.json";
 import { useDispatch } from 'react-redux';
 import { setSong } from '../../../actions/setSong';
 
-import imgSong1 from "../../../asset/img/phidieuvavesau.jpg";
-import imgSong2 from "../../../asset/img/thoikhongsailech.jpg";
-import imgSong3 from "../../../asset/img/aloha.jpg";
-
-import audioSong1 from "../../../asset/music/Phi-Dieu-Va-Ve-Sau-Nham-Nhien.mp3";
-import audioSong2 from "../../../asset/music/Thoi-Khong-Sai-Lech-Ngai-Than.mp3";
-import audioSong3 from "../../../asset/music/Aloha-Jo-Jung-Suk.mp3";
-
 const Recommended = () => {
 
-    const songs = data.songs;
     const dispatch = useDispatch();
-
-    songs[0].image = imgSong1;
-    songs[1].image = imgSong2;
-    songs[2].image = imgSong3;
-
-    songs[0].audio = audioSong1;
-    songs[1].audio = audioSong2;
-    songs[2].audio = audioSong3;
+    const songs = data.recommendedSongs;
 
     const changeSongHandle = (song) => {
         dispatch(setSong(song));
@@ -36,7 +20,7 @@ const Recommended = () => {
             <div className="row">
                 {songs.map((song) => (
                     <div onClick={() => changeSongHandle(song)} key={song.id} className="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                        <CardItem song={song} />
+                        <CardItem info={song} />
                     </div>
                 ))}
             </div>

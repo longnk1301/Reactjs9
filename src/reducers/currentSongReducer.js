@@ -2,11 +2,11 @@ const initialState = {
     "id": "00001",
     "name": "Phi Điểu Và Ve Sầu",
     "performer": "Nhậm Thiên",
-    "image": "../../data/img/phidieuvavesau.jpg",
-    "audio": "../../data/music/Phi-Dieu-Va-Ve-Sau-Nham-Nhien.mp3"
+    "image": "phidieuvavesau.jpg",
+    "audio": "Phi-Dieu-Va-Ve-Sau-Nham-Nhien.mp3"
 };
 
-const currentSongReducer = (state = initialState, action) => {
+const CurrentSongReducer = (state = initialState, action) => {
     switch (action.type) {
         case 'SET_SONG':
             return action.payload;
@@ -15,4 +15,4 @@ const currentSongReducer = (state = initialState, action) => {
     }
 }
 
-export default currentSongReducer;
+export default CurrentSongReducer;

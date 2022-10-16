@@ -1,8 +1,10 @@
 import { combineReducers } from "redux";
-import currentSongReducer from "./currentSongReducer";
+import CurrentSongReducer from "./CurrentSongReducer";
+import SearchReducer from "./SearchReducer";
 
 const rootReducers = combineReducers({
-    song: currentSongReducer,
+    song: CurrentSongReducer,
+    searchValue: SearchReducer
 });
 
 export default rootReducers;
