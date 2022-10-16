@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from "react";
-import CardItem from "../../../component/cardItem/CardItem";
+import CardItem from "../../../component/CardItem/CardItem";
 import "./SearchPage.css";
 import data from "../../../data/data.json";
 import { useDispatch, useSelector } from 'react-redux';
@@ -18,6 +18,7 @@ const SearchPage = () => {
     useEffect(() => {
         filterSongs();
         filterArtists();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [searchValue])
 
     const filterSongs = () => {

@@ -13,6 +13,8 @@ const CardItem = (props) => {
         case "category":
             subInfo = "";
             break;
+        default:
+            return
     }
 
     return (

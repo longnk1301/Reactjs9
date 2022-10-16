@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CardItem from "src/component/cardItem/CardItem";
+import CardItem from "src/component/CardItem/CardItem";
 import "./CategoryPage.css";
 import data from "src/data/data.json";
 import { useDispatch } from 'react-redux';
@@ -10,9 +10,8 @@ const CategoryPage = () => {
 
     const allPlayList = data.playLists;
     const dispatch = useDispatch();
-    const [playlists, setPlaylists] = useState([]);
+    const [playlists] = useState([]);
     let { categorySelect } = useParams();
-    const songs = data.recommendedSongs;
 
     const filterPlaylistByCategory = () => {
         const temp = [];

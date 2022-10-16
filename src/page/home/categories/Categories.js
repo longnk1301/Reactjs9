@@ -1,5 +1,5 @@
 import React from "react";
-import CardItem from "../../../component/cardItem/CardItem";
+import CardItem from "../../../component/CardItem/CardItem";
 import "./Categories.css";
 import data from "../../../data/data.json";
 import { NavLink } from "react-router-dom";
