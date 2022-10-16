@@ -1,5 +1,5 @@
 import React from "react";
-import CardItem from "../../../component/carditem/CardItem";
+import CardItem from "../../../component/cardItem/CardItem";
 import "./Artists.css";
 import data from "../../../data/data.json";
 import { useDispatch } from 'react-redux';

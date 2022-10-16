@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CardItem from "src/component/carditem/CardItem";
+import CardItem from "src/component/cardItem/CardItem";
 import "./CategoryPage.css";
 import data from "src/data/data.json";
 import { useDispatch } from 'react-redux';

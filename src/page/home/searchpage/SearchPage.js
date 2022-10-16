@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from "react";
-import CardItem from "../../../component/carditem/CardItem";
+import CardItem from "../../../component/cardItem/CardItem";
 import "./SearchPage.css";
 import data from "../../../data/data.json";
 import { useDispatch, useSelector } from 'react-redux';
