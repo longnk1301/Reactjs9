@@ -1,4 +1,5 @@
 import { commerce } from "../lib/commerce";
+import axios from "./axios";
 
 export const getData = async () => {
     const response = await commerce.products
@@ -43,7 +44,23 @@ export const handleEmptyDataCart = async () => {
 };
 
 export const getDataShippingCountries = async (checkoutTokenId) => {
-    const response = await commerce.services.localeListShippingCountries(checkoutTokenId);
+    const { countries } = await commerce.services.localeListShippingCountries(checkoutTokenId);
 
-    return response;
+    return countries;
+};
+
+export const getDataSubdivisions = async (countryCode) => {
+    const { subdivisions } = await commerce.services.localeListSubdivisions(countryCode);
+
+    return subdivisions;
+};
+
+export const getDataShippingOptions = async (checkoutTokenId, country, region = null) => {
+    const options = await commerce.checkout.getShippingOptions(checkoutTokenId, { country, region });
+
+    return options;
+};
+
+export const registerApi = async (email, password) => {
+    return axios.post("/api/register", { email, password });
 };

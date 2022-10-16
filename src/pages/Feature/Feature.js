@@ -96,7 +96,7 @@ const Feature = () => {
                         EMPTY CART
                     </Button>
                     <Button className="bg-primary border boder-0">
-                        <Link to="payment" className="nav-link">
+                        <Link to="/payment" className="nav-link">
                             CHECK OUT
                         </Link>
                     </Button>
